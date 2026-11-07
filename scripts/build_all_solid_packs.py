@@ -5,12 +5,14 @@ import time
 import xml.etree.ElementTree as ET
 from PIL import Image, ImageChops
 
-BASE_DIR = "/tmp/apk_base"
-JAVA_BIN = os.path.expanduser("~/.local/android-tools/jre21/bin/java")
-APKTOOL_JAR = os.path.expanduser("~/.local/android-tools/apktool.jar")
-SIGNER_JAR = os.path.expanduser("~/.local/android-tools/uber-apk-signer.jar")
-DEST_DIR = "/media/spicykiller/New Volume/Syncthing/Nothing Phone 3A/Download"
-REPO_DIR = "/media/spicykiller/New Volume/Syncthing/Nothing Phone 3A/Asus Laptop/NothingTranslucentIcons"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_DIR = os.path.dirname(SCRIPT_DIR)
+DEST_DIR = os.path.join(REPO_DIR, "apks")
+BASE_DIR = os.path.join(REPO_DIR, "src")
+
+JAVA_BIN = shutil.which("java") or os.path.expanduser("~/.local/android-tools/jre21/bin/java")
+APKTOOL_JAR = os.environ.get("APKTOOL_JAR") or os.path.expanduser("~/.local/android-tools/apktool.jar")
+SIGNER_JAR = os.environ.get("SIGNER_JAR") or os.path.expanduser("~/.local/android-tools/uber-apk-signer.jar")
 
 from generate_13_vectors import GLYPHS
 
@@ -208,11 +210,10 @@ def build_and_sign(source_dir, out_apk_name):
     print(f"Signing completed in {time.time()-t0:.1f}s")
     
     final_signed = f"{signed_dir}/{out_apk_name}_unaligned-aligned-debugSigned.apk"
-    target_dl = f"{DEST_DIR}/{out_apk_name}.apk"
-    target_repo = f"{REPO_DIR}/{out_apk_name}.apk"
-    shutil.copyfile(final_signed, target_dl)
-    shutil.copyfile(final_signed, target_repo)
-    print(f"[DEPLOY] Successfully saved to:\n  -> {target_dl}\n  -> {target_repo}")
+    os.makedirs(DEST_DIR, exist_ok=True)
+    target_apk = f"{DEST_DIR}/{out_apk_name}.apk"
+    shutil.copyfile(final_signed, target_apk)
+    print(f"[DEPLOY] Successfully saved to:\n  -> {target_apk}")
     
     os.remove(unaligned)
     os.remove(final_signed)

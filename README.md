@@ -196,5 +196,5 @@ python3 scripts/build_all_solid_packs.py
 ## 🤝 CREDITS // SYSTEM ATTRIBUTION
 
 - **Syed Sibtain** (`SyedSibtain9`): Concept creator of the original *Nothing Translucent Icons*.
-- **Yashwanth Bellum** (`yb007-sketch`): Nothing OS 5.0 alignment, One UI 9.0 compatibility architecture, mathematical extraction pipeline, Theme Park framing engine, and custom regional icon definitions.
+- **yb007-sketch** (Lead Architect & Maintainer): Nothing OS 5.0 alignment, One UI 9.0 compatibility architecture, mathematical extraction pipeline, Theme Park framing engine, and custom regional icon definitions.
 - **Nothing Technology Limited**: Aesthetics, Nothing OS 5.0 liquid design guidelines, and glyph typography inspiration.

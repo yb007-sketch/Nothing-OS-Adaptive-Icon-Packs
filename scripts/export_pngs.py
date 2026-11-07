@@ -3,16 +3,16 @@ import re
 from PIL import Image
 import cairo
 
-OUT_DIR = "/media/spicykiller/New Volume/Syncthing/Nothing Phone 3A/Download/Nothing_Icons_PNG"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_DIR = os.path.dirname(SCRIPT_DIR)
+OUT_DIR = os.path.join(REPO_DIR, "assets", "exported_png")
 os.makedirs(f"{OUT_DIR}/Pure_White", exist_ok=True)
 os.makedirs(f"{OUT_DIR}/Pure_Black", exist_ok=True)
 os.makedirs(f"{OUT_DIR}/Translucent", exist_ok=True)
 
 from generate_13_vectors import GLYPHS
 
-plate_white = Image.open("/tmp/apk_decompiled/res/drawable-nodpi/plate_pure_white.png")
-plate_black = Image.open("/tmp/apk_decompiled/res/drawable-nodpi/plate_pure_black.png")
-plate_trans = Image.open("/tmp/apk_decompiled/res/drawable-nodpi/ic_liquid_glass_plate_0.png")
+plate_trans = Image.open(f"{REPO_DIR}/src/res/drawable-nodpi/ic_liquid_glass_plate_0.png")
 
 def render_glyph(paths_def, color_rgb):
     surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, 512, 512)
