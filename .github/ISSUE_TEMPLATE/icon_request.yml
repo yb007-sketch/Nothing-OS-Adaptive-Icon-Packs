@@ -1,0 +1,45 @@
+name: "🎨 Missing App Icon Request"
+description: "Request unmapped or missing apps to be included in the next update"
+title: "[ICON REQUEST]: "
+labels: ["icon request", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Requesting Missing App Icons
+        To ensure 100% theming coverage, please provide the component information for the missing application.
+
+  - type: input
+    id: app_name
+    attributes:
+      label: Application Name
+      placeholder: "e.g., Revolut, Monzo, Canva, Telegram"
+    validations:
+      required: true
+
+  - type: input
+    id: component_info
+    attributes:
+      label: Component Information / Package Name
+      description: |
+        Find this using the in-app **"Scan Installed Apps & Copy Appfilter XML"** feature, or via an app inspector like *App Manager*.
+      placeholder: "e.g., ComponentInfo{com.revolut.revolut/com.revolut.revolut.MainActivity}"
+    validations:
+      required: true
+
+  - type: input
+    id: store_url
+    attributes:
+      label: Google Play Store URL
+      placeholder: "https://play.google.com/store/apps/details?id=..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: reference_art
+    attributes:
+      label: Reference Logo & Regional Notes
+      description: Drag and drop the official vector or high-res icon logo if available.
+      placeholder: "Any special instructions or color notes..."
+    validations:
+      required: false

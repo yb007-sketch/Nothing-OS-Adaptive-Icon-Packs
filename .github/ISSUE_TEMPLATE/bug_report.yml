@@ -1,0 +1,93 @@
+name: "🐛 Bug Report"
+description: "Report a visual defect, launcher crash, Theme Park error, or installation issue"
+title: "[BUG]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Thank you for reporting an issue!
+        Please fill out the form below to help us locate and resolve the bug as quickly as possible.
+
+  - type: dropdown
+    id: edition
+    attributes:
+      label: Affected Icon Edition
+      description: Which icon pack edition are you experiencing problems with?
+      options:
+        - "🪟 Nothing Translucent Icons (com.yb007.nothingicons.translucent)"
+        - "⚪ Nothing Pure White Icons (com.yb007.nothingicons.purewhite)"
+        - "⚫ Nothing Pitch Black Icons (com.yb007.nothingicons.pitchblack)"
+        - "All Three Editions"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: launcher
+    attributes:
+      label: Launcher & Environment
+      description: Which launcher or theming module is active on your device?
+      options:
+        - "Nothing OS 5.0 (Nothing Launcher)"
+        - "Nothing OS 3.0 / 2.6 (Nothing Launcher)"
+        - "Samsung One UI 9.0 (Good Lock Theme Park)"
+        - "Samsung One UI 7.0 / 8.0 (Good Lock Theme Park)"
+        - "Nova Launcher"
+        - "Niagara Launcher"
+        - "Lawnchair Launcher"
+        - "Smart Launcher"
+        - "Other Launcher"
+    validations:
+      required: true
+
+  - type: input
+    id: device_info
+    attributes:
+      label: Device Model & Android Version
+      placeholder: "e.g., Nothing Phone (3a) - Android 15, Samsung Galaxy S25 - One UI 9.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Issue Category
+      options:
+        - "Visual Artifact / Translucent Bleed Leak"
+        - "Unthemed App / Squircle Frame Clamping Error"
+        - "Theme Park Build / Import Failure"
+        - "APK Installation / Signature Verification Error"
+        - "Launcher Crashing / Force Close"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of the Bug
+      description: A clear and concise explanation of what went wrong.
+      placeholder: "Explain what happened, including any error messages or visual anomalies..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can we replicate this on our test devices?
+      placeholder: |
+        1. Open launcher customisation / Theme Park
+        2. Apply 'Nothing Pitch Black Icons'
+        3. Open app drawer and observe [...]
+    validations:
+      required: false
+
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots & Logs
+      description: Drag and drop screenshots or paste logcat / ADB error output here.
+      placeholder: "Paste logs or drop images here..."
+    validations:
+      required: false

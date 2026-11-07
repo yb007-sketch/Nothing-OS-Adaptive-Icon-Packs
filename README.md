@@ -205,6 +205,19 @@ python3 scripts/build_all_solid_packs.py
 
 ---
 
+## 🛠️ SUPPORT, BUG REPORTS & ICON REQUESTS
+
+Encountered an unmapped app, a visual artifact, or an issue on your launcher? We track and patch community reports rapidly.
+
+| Action | Form Template | Purpose |
+| :--- | :--- | :--- |
+| 🐛 **Report a Bug** | [**Open Bug Report**](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/issues/new?template=bug_report.yml) | Report Theme Park build errors, squircle clipping, or launcher crashes |
+| 🎨 **Request Missing Icons** | [**Submit Icon Request**](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/issues/new?template=icon_request.yml) | Submit unmapped app component IDs to be drawn in the next release |
+| 💡 **Suggest a Feature** | [**Submit Feature Proposal**](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/issues/new?template=feature_request.md) | Propose new launcher styling, dynamic accents, or widget pairing ideas |
+| 🔒 **Security Disclosures** | [**Security Advisory**](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/security/advisories/new) | Privately disclose security or APK integrity concerns |
+
+---
+
 ## 🤝 CREDITS // SYSTEM ATTRIBUTION
 
 - **Syed Sibtain** (`SyedSibtain9`): Concept creator of the original *Nothing Translucent Icons*.

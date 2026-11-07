@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "🔒 Report a Security Vulnerability"
+    url: "https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/security/advisories/new"
+    about: "Privately disclose security issues or vulnerabilities directly to maintainers."
+  - name: "💬 Nothing Community & Discussion"
+    url: "https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/discussions"
+    about: "Ask questions, share your home screen setups, and discuss icon styling."
