@@ -8,7 +8,19 @@
 [![One UI 9.0](https://img.shields.io/badge/SAMSUNG-ONE_UI_9.0_COMPATIBLE-ff0055?style=for-the-badge&logo=samsung&logoColor=white)](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs)
 [![Android 14-17](https://img.shields.io/badge/ANDROID-API_34_TO_36-white?style=for-the-badge&logo=android&logoColor=black)](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs)
 [![Icon Database](https://img.shields.io/badge/ICONS-10%2C640%2B_MAPPED-blueviolet?style=for-the-badge)](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs)
-[![Build Status](https://img.shields.io/badge/BUILD-v0.6_VERIFIED-success?style=for-the-badge)](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/releases)
+[![Latest Release](https://img.shields.io/badge/DOWNLOAD-v0.6_RELEASES-success?style=for-the-badge&logo=github)](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/releases)
+
+<br/><br/>
+
+### 📥 1-CLICK DIRECT APK DOWNLOADS (v0.6)
+
+| Edition | Direct Download (Instant) | GitHub Release Mirror | Size |
+| :--- | :---: | :---: | :---: |
+| 🪟 **Nothing Translucent** | [**⬇️ Download Translucent APK**](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/raw/main/apks/Nothing.Translucent.Icons.v0.6.apk) | [GitHub Release Asset](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/releases/download/v0.6/Nothing.Translucent.Icons.v0.6.apk) | `44.0 MB` |
+| ⚪ **Nothing Pure White** | [**⬇️ Download Pure White APK**](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/raw/main/apks/Nothing.Pure.White.Icons.v0.6.apk) | [GitHub Release Asset](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/releases/download/v0.6/Nothing.Pure.White.Icons.v0.6.apk) | `26.9 MB` |
+| ⚫ **Nothing Pitch Black** | [**⬇️ Download Pitch Black APK**](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/raw/main/apks/Nothing.Pitch.Black.Icons.v0.6.apk) | [GitHub Release Asset](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/releases/download/v0.6/Nothing.Pitch.Black.Icons.v0.6.apk) | `26.9 MB` |
+
+*(On mobile, simply tap any download link above to install immediately on your device)*
 
 </div>
 
@@ -102,11 +114,11 @@ flowchart TD
 
 All APK binaries are pre-aligned and cryptographically signed with permanent debug keys for Android 14 to 17:
 
-| Target Edition | Package Namespace | Binary Size | Direct Download |
+| Target Edition | Package Namespace | Binary Size | Direct 1-Click Download |
 | :--- | :--- | :---: | :--- |
-| **Nothing Translucent Icons** | `com.sibtain.nothingtranslucenticons` | `44.0 MB` | [Download APK](./apks/Nothing.Translucent.Icons.v0.6.apk) |
-| **Nothing Pure White Icons** | `com.sibtain.nothingpurewhiteicons` | `26.9 MB` | [Download APK](./apks/Nothing.Pure.White.Icons.v0.6.apk) |
-| **Nothing Pitch Black Icons** | `com.sibtain.nothingpitchblackicons` | `26.9 MB` | [Download APK](./apks/Nothing.Pitch.Black.Icons.v0.6.apk) |
+| **Nothing Translucent Icons** | `com.sibtain.nothingtranslucenticons` | `44.0 MB` | [📥 **Download APK**](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/raw/main/apks/Nothing.Translucent.Icons.v0.6.apk) |
+| **Nothing Pure White Icons** | `com.sibtain.nothingpurewhiteicons` | `26.9 MB` | [📥 **Download APK**](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/raw/main/apks/Nothing.Pure.White.Icons.v0.6.apk) |
+| **Nothing Pitch Black Icons** | `com.sibtain.nothingpitchblackicons` | `26.9 MB` | [📥 **Download APK**](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/raw/main/apks/Nothing.Pitch.Black.Icons.v0.6.apk) |
 
 ---
 
