@@ -32,13 +32,13 @@ jobs:
             ### 📥 Direct APK Downloads:
             - **Nothing Translucent Icons** (`Nothing.Translucent.Icons.v0.6.apk` - 44.0 MB)
               - *Liquid frosted translucent glass plate with dynamic glyphs*
-              - Package: `com.sibtain.nothingtranslucenticons`
+              - Package: `com.yb007.nothingicons.translucent`
             - **Nothing Pure White Icons** (`Nothing.Pure.White.Icons.v0.6.apk` - 26.9 MB)
               - *Solid #FFFFFF daylight ceramic plate with charcoal glyphs (0% translucent bleed)*
-              - Package: `com.sibtain.nothingpurewhiteicons`
+              - Package: `com.yb007.nothingicons.purewhite`
             - **Nothing Pitch Black Icons** (`Nothing.Pitch.Black.Icons.v0.6.apk` - 26.9 MB)
               - *Solid #0D0D0D pitch dark plate with white glyphs (AMOLED battery saver)*
-              - Package: `com.sibtain.nothingpitchblackicons`
+              - Package: `com.yb007.nothingicons.pitchblack`
             
             ---
             

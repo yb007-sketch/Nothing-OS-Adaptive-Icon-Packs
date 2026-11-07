@@ -55,7 +55,7 @@ Engineered to match the **Translucent Liquid Glass** interface language introduc
 | Subsystem | Telemetry Status | Specifications |
 | :--- | :--- | :--- |
 | **Nothing OS 5.0 Engine** | `[ONLINE]` | Native Nothing Launcher integration with squircle boundary clamping |
-| **One UI 9.0 Theme Park** | `[ONLINE]` | Standalone APK namespaces (`com.sibtain.nothing*`) for Good Lock Theme Park |
+| **One UI 9.0 Theme Park** | `[ONLINE]` | Standalone APK namespaces (`com.yb007.nothingicons.*`) for Good Lock Theme Park |
 | **Solid Mode Opacity** | `[100% PASS]` | Mathematical glyph isolation removes all 164 pre-baked translucent leaks |
 | **Unthemed Framing** | `[OPTIMIZED]` | High-res `iconback.png` + `iconmask.png` auto-scales unmapped shortcuts to 68% |
 | **Android Signatures** | `[CRYPT_VERIFIED]` | Dual V1 (JAR), V2 (APK Signature Scheme), and V3 (Android 11-17) signed |
@@ -96,9 +96,9 @@ flowchart TD
     end
 
     subgraph EDITIONS ["03 // THREE STANDALONE TARGETS"]
-        CLEAN_GLYPH -->|Composite on Liquid Frosted Plate| PACK_TRANS["Nothing Translucent OS 5.0<br/>(com.sibtain.nothingtranslucenticons)"]
-        CLEAN_GLYPH -->|Composite on Solid #FFFFFF Plate| PACK_WHITE["Nothing Pure White<br/>(com.sibtain.nothingpurewhiteicons)"]
-        CLEAN_GLYPH -->|Composite on Solid #0D0D0D Plate| PACK_BLACK["Nothing Pitch Black<br/>(com.sibtain.nothingpitchblackicons)"]
+        CLEAN_GLYPH -->|Composite on Liquid Frosted Plate| PACK_TRANS["Nothing Translucent OS 5.0<br/>(com.yb007.nothingicons.translucent)"]
+        CLEAN_GLYPH -->|Composite on Solid #FFFFFF Plate| PACK_WHITE["Nothing Pure White<br/>(com.yb007.nothingicons.purewhite)"]
+        CLEAN_GLYPH -->|Composite on Solid #0D0D0D Plate| PACK_BLACK["Nothing Pitch Black<br/>(com.yb007.nothingicons.pitchblack)"]
     end
 
     subgraph ENGINE ["04 // AUTO-THEMING & SIGNING"]
@@ -116,9 +116,9 @@ All APK binaries are pre-aligned and cryptographically signed with permanent deb
 
 | Target Edition | Package Namespace | Binary Size | Direct 1-Click Download |
 | :--- | :--- | :---: | :--- |
-| **Nothing Translucent Icons** | `com.sibtain.nothingtranslucenticons` | `44.0 MB` | [📥 **Download APK**](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/raw/main/apks/Nothing.Translucent.Icons.v0.6.apk) |
-| **Nothing Pure White Icons** | `com.sibtain.nothingpurewhiteicons` | `26.9 MB` | [📥 **Download APK**](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/raw/main/apks/Nothing.Pure.White.Icons.v0.6.apk) |
-| **Nothing Pitch Black Icons** | `com.sibtain.nothingpitchblackicons` | `26.9 MB` | [📥 **Download APK**](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/raw/main/apks/Nothing.Pitch.Black.Icons.v0.6.apk) |
+| **Nothing Translucent Icons** | `com.yb007.nothingicons.translucent` | `44.0 MB` | [📥 **Download APK**](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/raw/main/apks/Nothing.Translucent.Icons.v0.6.apk) |
+| **Nothing Pure White Icons** | `com.yb007.nothingicons.purewhite` | `26.9 MB` | [📥 **Download APK**](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/raw/main/apks/Nothing.Pure.White.Icons.v0.6.apk) |
+| **Nothing Pitch Black Icons** | `com.yb007.nothingicons.pitchblack` | `26.9 MB` | [📥 **Download APK**](https://github.com/yb007-sketch/Nothing-OS-Adaptive-Icon-Packs/raw/main/apks/Nothing.Pitch.Black.Icons.v0.6.apk) |
 
 ---
 

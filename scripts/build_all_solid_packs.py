@@ -33,8 +33,11 @@ ALL_EXTRA_MAPPINGS = [
     ("ComponentInfo{com.zoho.assist/com.zoho.assist.app.mobile.ZAssistActivity}", "ic_zoho_assist"),
     
     # Self mappings for all 3 apps so scan has 0 unmatched
-    ("ComponentInfo{com.sibtain.nothingpitchblackicons/com.sibtain.nothingtranslucenticons.MainActivity}", "ic_com_sibtain_nothingpitchblackicons"),
-    ("ComponentInfo{com.sibtain.nothingpurewhiteicons/com.sibtain.nothingtranslucenticons.MainActivity}", "ic_com_sibtain_nothingpurewhiteicons"),
+    ("ComponentInfo{com.yb007.nothingicons.pitchblack/com.sibtain.nothingtranslucenticons.MainActivity}", "ic_com_yb007_nothingicons_pitchblack"),
+    ("ComponentInfo{com.yb007.nothingicons.purewhite/com.sibtain.nothingtranslucenticons.MainActivity}", "ic_com_yb007_nothingicons_purewhite"),
+    ("ComponentInfo{com.yb007.nothingicons.translucent/com.sibtain.nothingtranslucenticons.MainActivity}", "ic_nothing_translucent"),
+    ("ComponentInfo{com.sibtain.nothingpitchblackicons/com.sibtain.nothingtranslucenticons.MainActivity}", "ic_com_yb007_nothingicons_pitchblack"),
+    ("ComponentInfo{com.sibtain.nothingpurewhiteicons/com.sibtain.nothingtranslucenticons.MainActivity}", "ic_com_yb007_nothingicons_purewhite"),
     ("ComponentInfo{com.sibtain.nothingtranslucenticons/com.sibtain.nothingtranslucenticons.MainActivity}", "ic_nothing_translucent"),
     
     # X / Twitter common activity mappings
@@ -107,6 +110,8 @@ def prepare_common_base(dest_dir):
 
     # Add self drawables
     self_drawables = [
+        "ic_com_yb007_nothingicons_pitchblack",
+        "ic_com_yb007_nothingicons_purewhite",
         "ic_com_sibtain_nothingpitchblackicons",
         "ic_com_sibtain_nothingpurewhiteicons",
         "ic_nothing_translucent",
@@ -181,9 +186,11 @@ def update_manifest(target_dir, pkg_name, app_label):
     mf_path = f"{target_dir}/AndroidManifest.xml"
     with open(mf_path, "r") as f:
         mf = f.read()
-    mf = mf.replace('package="com.sibtain.nothingtranslucenticons"', f'package="{pkg_name}"')
-    mf = mf.replace('com.sibtain.nothingtranslucenticons.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION', f'{pkg_name}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION')
-    mf = mf.replace('com.sibtain.nothingtranslucenticons.androidx-startup', f'{pkg_name}.androidx-startup')
+    import re
+    mf = re.sub(r'package="[^"]+"', f'package="{pkg_name}"', mf, count=1)
+    mf = re.sub(r'android:name="[^"]+\.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"', f'android:name="{pkg_name}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"', mf)
+    mf = re.sub(r'android:authorities="[^"]+\.androidx-startup"', f'android:authorities="{pkg_name}.androidx-startup"', mf)
+    mf = re.sub(r'android:name="[^"]+\.ThemeRefreshAlias"', f'android:name="{pkg_name}.ThemeRefreshAlias"', mf)
     mf = mf.replace('android:allowBackup="true"', 'android:allowBackup="false" android:usesCleartextTraffic="false"')
     with open(mf_path, "w") as f:
         f.write(mf)
@@ -191,7 +198,7 @@ def update_manifest(target_dir, pkg_name, app_label):
     strings_path = f"{target_dir}/res/values/strings.xml"
     with open(strings_path, "r") as f:
         st = f.read()
-    st = st.replace('<string name="app_name">Nothing Translucent Icons</string>', f'<string name="app_name">{app_label}</string>')
+    st = re.sub(r'<string name="app_name">[^<]+</string>', f'<string name="app_name">{app_label}</string>', st)
     with open(strings_path, "w") as f:
         f.write(st)
 
@@ -230,7 +237,7 @@ print("BUILDING 1/3: Nothing Pure White Icons")
 print("="*50)
 dir_white = "/tmp/apk_white"
 prepare_common_base(dir_white)
-update_manifest(dir_white, "com.sibtain.nothingpurewhiteicons", "Nothing Pure White Icons")
+update_manifest(dir_white, "com.yb007.nothingicons.purewhite", "Nothing Pure White Icons")
 
 # Convert all 164 PNGs for Pure White
 nodpi_white = f"{dir_white}/res/drawable-nodpi"
@@ -260,7 +267,7 @@ for name in png_names:
         white_icon.save(f"{night_nodpi_white}/{name}")
 
 # Self icons in nodpi
-for s_name in ["ic_com_sibtain_nothingpurewhiteicons.png", "ic_nothing_pure_white.png", "ic_com_sibtain_nothingpitchblackicons.png", "ic_nothing_pitch_black.png"]:
+for s_name in ["ic_com_yb007_nothingicons_purewhite.png", "ic_com_sibtain_nothingpurewhiteicons.png", "ic_nothing_pure_white.png", "ic_com_yb007_nothingicons_pitchblack.png", "ic_com_sibtain_nothingpitchblackicons.png", "ic_nothing_pitch_black.png"]:
     white_plate.save(f"{nodpi_white}/{s_name}")
     white_plate.save(f"{night_nodpi_white}/{s_name}")
 
@@ -296,7 +303,7 @@ print("BUILDING 2/3: Nothing Pitch Black Icons")
 print("="*50)
 dir_black = "/tmp/apk_black"
 prepare_common_base(dir_black)
-update_manifest(dir_black, "com.sibtain.nothingpitchblackicons", "Nothing Pitch Black Icons")
+update_manifest(dir_black, "com.yb007.nothingicons.pitchblack", "Nothing Pitch Black Icons")
 
 # Convert all 164 PNGs for Pitch Black
 nodpi_black = f"{dir_black}/res/drawable-nodpi"
@@ -324,7 +331,7 @@ for name in png_names:
         black_icon.save(f"{night_nodpi_black}/{name}")
 
 # Self icons in nodpi
-for s_name in ["ic_com_sibtain_nothingpurewhiteicons.png", "ic_nothing_pure_white.png", "ic_com_sibtain_nothingpitchblackicons.png", "ic_nothing_pitch_black.png"]:
+for s_name in ["ic_com_yb007_nothingicons_purewhite.png", "ic_com_sibtain_nothingpurewhiteicons.png", "ic_nothing_pure_white.png", "ic_com_yb007_nothingicons_pitchblack.png", "ic_com_sibtain_nothingpitchblackicons.png", "ic_nothing_pitch_black.png"]:
     black_plate.save(f"{nodpi_black}/{s_name}")
     black_plate.save(f"{night_nodpi_black}/{s_name}")
 
@@ -360,6 +367,7 @@ print("BUILDING 3/3: Nothing Translucent Icons")
 print("="*50)
 dir_trans = "/tmp/apk_translucent"
 prepare_common_base(dir_trans)
+update_manifest(dir_trans, "com.yb007.nothingicons.translucent", "Nothing Translucent Icons")
 
 # Unthemed plate setup for translucent
 plate0.save(f"{dir_trans}/res/drawable-nodpi/iconback.png")
@@ -367,7 +375,7 @@ icon_mask.save(f"{dir_trans}/res/drawable-nodpi/iconmask.png")
 empty_upon.save(f"{dir_trans}/res/drawable-nodpi/iconupon.png")
 
 # Self icons
-for s_name in ["ic_com_sibtain_nothingpurewhiteicons.png", "ic_nothing_pure_white.png", "ic_com_sibtain_nothingpitchblackicons.png", "ic_nothing_pitch_black.png"]:
+for s_name in ["ic_com_yb007_nothingicons_purewhite.png", "ic_com_sibtain_nothingpurewhiteicons.png", "ic_nothing_pure_white.png", "ic_com_yb007_nothingicons_pitchblack.png", "ic_com_sibtain_nothingpitchblackicons.png", "ic_nothing_pitch_black.png"]:
     plate0.save(f"{dir_trans}/res/drawable-nodpi/{s_name}")
 
 build_and_sign(dir_trans, "Nothing.Translucent.Icons.v0.6")
