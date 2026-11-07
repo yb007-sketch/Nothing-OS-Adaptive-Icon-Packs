@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_liquid_glass_plate_3" />
+    <item>
+        <vector android:height="512.0dp" android:width="512.0dp" android:viewportWidth="512.0" android:viewportHeight="512.0">
+            <group android:scaleX="1.270833" android:scaleY="1.270833" android:translateX="134.0" android:translateY="134.0">
+                <path android:pathData="M118 73V59.325c0-2.068-1.071-3.985-2.979-4.786C111.51 53.063 104.993 51 96 51s-15.51 2.063-19.021 3.539C75.07 55.34 74 57.257 74 59.325V73" android:strokeColor="@color/glyph_fg" android:strokeWidth="10.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M140 114c0 31 18 38 18 56M52 114c0 31-18 38-18 56" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M81 132.667S81 126 96 126s15 6.667 15 6.667-.865 1.537-2.301 3.568C105.906 140.185 100.953 146 96 146s-9.906-5.815-12.699-9.765c-1.436-2.031-2.301-3.568-2.301-3.568" android:strokeColor="@color/glyph_fg" android:strokeWidth="10.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M140 114a44.001 44.001 0 0 0-75.113-31.113A44 44 0 0 0 52 114" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M125.5 77 155 58 96 21 37 58l29.5 19" android:strokeColor="@color/glyph_fg" android:strokeWidth="10.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="m117 109-11-.357 9.409-8.643M80 109a4 4 0 1 0 0-8 4 4 0 0 0 0 8" android:strokeColor="@color/glyph_fg" android:strokeWidth="8.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+            </group>
+        </vector>
+    </item>
+</layer-list>

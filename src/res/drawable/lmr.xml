@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_liquid_glass_plate_2" />
+    <item>
+        <vector android:height="512.0dp" android:width="512.0dp" android:viewportWidth="512.0" android:viewportHeight="512.0">
+            <group android:scaleX="1.270833" android:scaleY="1.270833" android:translateX="134.0" android:translateY="134.0">
+                <path android:pathData="M 22.0000,98.0000 a 15.0000,15.0000 0 1,0 30.0000,0 a 15.0000,15.0000 0 1,0 -30.0000,0 z" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="m52 28 32-6M52 54l32-6M52 28v70m32-50V22" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M119 21c0 6.667-5.333 12-12 12 6.667 0 12 5.333 12 12 0-6.667 5.333-12 12-12-6.667 0-12-5.333-12-12M33 147c0 6.667-5.333 12-12 12 6.667 0 12 5.333 12 12 0-6.667 5.333-12 12-12-6.667 0-12-5.333-12-12" android:strokeColor="@color/glyph_fg" android:strokeWidth="10.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M 78.0000,155.0000 a 15.0000,15.0000 0 1,0 30.0000,0 a 15.0000,15.0000 0 1,0 -30.0000,0 z" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M 140.0000,143.0000 a 15.0000,15.0000 0 1,0 30.0000,0 a 15.0000,15.0000 0 1,0 -30.0000,0 z" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="m108 85 62-12m-62 38 62-12m-62-14v70m62-82v70" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+            </group>
+        </vector>
+    </item>
+</layer-list>

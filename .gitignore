@@ -1,0 +1,7 @@
+# Build and temporary files
+*.unaligned.apk
+*.tmp
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

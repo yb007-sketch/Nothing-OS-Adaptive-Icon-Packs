@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_liquid_glass_plate_3" />
+    <item>
+        <vector android:height="512.0dp" android:width="512.0dp" android:viewportWidth="512.0" android:viewportHeight="512.0">
+            <group android:scaleX="1.270833" android:scaleY="1.270833" android:translateX="134.0" android:translateY="134.0">
+                <path android:pathData="M116 150V92.174a6 6 0 0 0-2.623-4.96l-41-27.915a6 6 0 0 0-6.754 0l-41 27.915A6 6 0 0 0 22 92.174V150a6 6 0 0 0 6 6h21a6 6 0 0 0 6-6v-28a6 6 0 0 1 6-6h16a6 6 0 0 1 6 6v28a6 6 0 0 0 6 6h21a6 6 0 0 0 6-6Z" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="butt" android:strokeLineJoin="round" />
+                <path android:pathData="M136 156h28a6 6 0 0 0 6-6V42a6 6 0 0 0-6-6H87.5a5.5 5.5 0 0 0-5.5 5.5" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M 139.0000,118.0000 H 143.0000 A 2.0000,2.0000 0 0 1 145.0000,120.0000 V 124.0000 A 2.0000,2.0000 0 0 1 143.0000,126.0000 H 139.0000 A 2.0000,2.0000 0 0 1 137.0000,124.0000 V 120.0000 A 2.0000,2.0000 0 0 1 139.0000,118.0000 Z" android:strokeColor="@color/glyph_fg" android:strokeWidth="8.0" android:strokeLineCap="butt" android:strokeLineJoin="round" />
+                <path android:pathData="M 139.0000,92.0000 H 143.0000 A 2.0000,2.0000 0 0 1 145.0000,94.0000 V 98.0000 A 2.0000,2.0000 0 0 1 143.0000,100.0000 H 139.0000 A 2.0000,2.0000 0 0 1 137.0000,98.0000 V 94.0000 A 2.0000,2.0000 0 0 1 139.0000,92.0000 Z" android:strokeColor="@color/glyph_fg" android:strokeWidth="8.0" android:strokeLineCap="butt" android:strokeLineJoin="round" />
+                <path android:pathData="M 139.0000,66.0000 H 143.0000 A 2.0000,2.0000 0 0 1 145.0000,68.0000 V 72.0000 A 2.0000,2.0000 0 0 1 143.0000,74.0000 H 139.0000 A 2.0000,2.0000 0 0 1 137.0000,72.0000 V 68.0000 A 2.0000,2.0000 0 0 1 139.0000,66.0000 Z" android:strokeColor="@color/glyph_fg" android:strokeWidth="8.0" android:strokeLineCap="butt" android:strokeLineJoin="round" />
+            </group>
+        </vector>
+    </item>
+</layer-list>

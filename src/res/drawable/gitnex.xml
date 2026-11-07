@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_liquid_glass_plate_2" />
+    <item>
+        <vector android:height="512.0dp" android:width="512.0dp" android:viewportWidth="512.0" android:viewportHeight="512.0">
+            <group android:scaleX="1.270833" android:scaleY="1.270833" android:translateX="134.0" android:translateY="134.0">
+                <path android:pathData="M48 22v148m96-122v122m0-9h-42a6 6 0 0 1-6-6V55a6 6 0 0 0-6-6H48" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="miter" />
+                <path android:pathData="M 88.0000,105.0000 a 8.0000,8.0000 0 1,0 16.0000,0 a 8.0000,8.0000 0 1,0 -16.0000,0 z" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="miter" />
+                <path android:pathData="M 39.0000,162.0000 a 8.0000,8.0000 0 1,0 16.0000,0 a 8.0000,8.0000 0 1,0 -16.0000,0 z" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="miter" />
+                <path android:pathData="M 136.0000,162.0000 a 8.0000,8.0000 0 1,0 16.0000,0 a 8.0000,8.0000 0 1,0 -16.0000,0 z" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="miter" />
+                <path android:pathData="M 136.0000,49.0000 a 8.0000,8.0000 0 1,0 16.0000,0 a 8.0000,8.0000 0 1,0 -16.0000,0 z" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="miter" />
+                <path android:pathData="M 40.0000,49.0000 a 8.0000,8.0000 0 1,0 16.0000,0 a 8.0000,8.0000 0 1,0 -16.0000,0 z" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="miter" />
+            </group>
+        </vector>
+    </item>
+</layer-list>

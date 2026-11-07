@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_liquid_glass_plate_2" />
+    <item>
+        <vector android:height="512.0dp" android:width="512.0dp" android:viewportWidth="512.0" android:viewportHeight="512.0">
+            <group android:scaleX="1.270833" android:scaleY="1.270833" android:translateX="134.0" android:translateY="134.0">
+                <path android:pathData="M 91.0000,96.0000 a 5.0000,5.0000 0 1,0 10.0000,0 a 5.0000,5.0000 0 1,0 -10.0000,0 z" android:strokeColor="@color/glyph_fg" android:strokeWidth="10.0" android:strokeLineCap="round" android:strokeLineJoin="miter" />
+                <path android:pathData="m84 106 52-42" android:strokeColor="@color/glyph_fg" android:strokeWidth="10.0" android:strokeLineCap="round" android:strokeLineJoin="miter" />
+                <path android:pathData="M167.479 115.153A73.997 73.997 0 0 0 37.292 50.951a74 74 0 0 0-12.77 64.202" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="miter" />
+                <path android:pathData="M115 148c2.387 0 4.676-.843 6.364-2.343S124 142.122 124 140s-.948-4.157-2.636-5.657S117.387 132 115 132m4.5 36c2.254 0 4.416-1.054 6.01-2.929S128 160.652 128 158s-.896-5.196-2.49-7.071S121.754 148 119.5 148" android:strokeColor="@color/glyph_fg" android:strokeWidth="10.0" android:strokeLineCap="round" android:strokeLineJoin="miter" />
+                <path android:pathData="M96 42V22" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="miter" />
+                <path android:pathData="M101 168v-36m-16 36v-36m-11 12c5.823 0 11 4.8 11 12s-5.177 12-11 12-11-4.8-11-12 5.177-12 11-12zm41-12h-14m18 36h-18m18-20h-18" android:strokeColor="@color/glyph_fg" android:strokeWidth="10.0" android:strokeLineCap="round" android:strokeLineJoin="miter" />
+                <path android:pathData="m148.16 109.976 19.319 5.177m-142.957 0 19.318-5.177" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="miter" />
+            </group>
+        </vector>
+    </item>
+</layer-list>

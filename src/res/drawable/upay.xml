@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_liquid_glass_plate_0" />
+    <item>
+        <vector android:height="512.0dp" android:width="512.0dp" android:viewportWidth="512.0" android:viewportHeight="512.0">
+            <group android:scaleX="1.270833" android:scaleY="1.270833" android:translateX="134.0" android:translateY="134.0">
+                <path android:pathData="M168 98a72 72 0 0 1-5.481 27.553 72 72 0 0 1-38.966 38.966 72 72 0 0 1-55.106 0 72 72 0 0 1-38.966-38.966A72 72 0 0 1 24 98" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M120 98a24 24 0 0 1-14.816 22.173 23.997 23.997 0 0 1-31.357-12.989A24 24 0 0 1 72 98" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M96 122a24 24 0 0 1 22.173 14.816 23.996 23.996 0 0 1-12.989 31.357A24 24 0 0 1 96 170" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M 120.0000,46.0000 a 24.0000,24.0000 0 1,0 48.0000,0 a 24.0000,24.0000 0 1,0 -48.0000,0 z" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M 24.0000,46.0000 a 24.0000,24.0000 0 1,0 48.0000,0 a 24.0000,24.0000 0 1,0 -48.0000,0 z" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M24 94a24 24 0 0 1 48 0m48 0a24.003 24.003 0 0 1 24-24 24 24 0 0 1 24 24m-48 0v4m-96-4v4m144-4v4m-96-4v4" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+            </group>
+        </vector>
+    </item>
+</layer-list>

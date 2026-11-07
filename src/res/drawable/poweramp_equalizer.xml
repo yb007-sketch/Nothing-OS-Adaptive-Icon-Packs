@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_liquid_glass_plate_3" />
+    <item>
+        <vector android:height="512.0dp" android:width="512.0dp" android:viewportWidth="512.0" android:viewportHeight="512.0">
+            <group android:scaleX="1.270833" android:scaleY="1.270833" android:translateX="134.0" android:translateY="134.0">
+                <path android:pathData="M 22.0000,96.0000 a 74.0000,74.0000 0 1,0 148.0000,0 a 74.0000,74.0000 0 1,0 -148.0000,0 z" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="butt" android:strokeLineJoin="miter" />
+                <path android:pathData="M82 65c0-5.523 4.477-10 10-10h6c5.523 0 10 4.477 10 10v54c0 5.523-4.477 10-10 10h-6c-5.523 0-10-4.477-10-10zm26 14c0-5.523 4.477-10 10-10h6c5.523 0 10 4.477 10 10v40c0 5.523-4.477 10-10 10h-6c-5.523 0-10-4.477-10-10zm-52 34c0-5.523 4.477-10 10-10h6c5.523 0 10 4.477 10 10v6c0 5.523-4.477 10-10 10h-6c-5.523 0-10-4.477-10-10z" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+            </group>
+        </vector>
+    </item>
+</layer-list>

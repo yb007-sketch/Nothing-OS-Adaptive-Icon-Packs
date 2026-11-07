@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_liquid_glass_plate_0" />
+    <item>
+        <vector android:height="512.0dp" android:width="512.0dp" android:viewportWidth="512.0" android:viewportHeight="512.0">
+            <group android:scaleX="1.270833" android:scaleY="1.270833" android:translateX="134.0" android:translateY="134.0">
+                <path android:pathData="m96 145-39.813-7.465c-3.71-.695-5.341-5.092-2.983-8.04a5 5 0 0 0-.37-6.66l-3.077-3.078A6 6 0 0 1 48 115.515V56c0-8 8-24 16-24 5.613 0 11.226-4.922 14.076-7.86C79.345 22.832 81.06 22 82.883 22H96m0 123 39.813-7.465c3.709-.695 5.341-5.092 2.983-8.04a5 5 0 0 1 .369-6.66l3.078-3.078a6 6 0 0 0 1.757-4.242V56c0-8-8-24-16-24-5.613 0-11.226-4.922-14.076-7.86-1.269-1.308-2.985-2.14-4.808-2.14H96" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M 74.0000,118.0000 a 4.0000,4.0000 0 1,0 8.0000,0 a 4.0000,4.0000 0 1,0 -8.0000,0 z" android:strokeColor="@color/glyph_fg" android:strokeWidth="8.0" android:strokeLineCap="butt" android:strokeLineJoin="miter" />
+                <path android:pathData="M 110.0000,118.0000 a 4.0000,4.0000 0 1,0 8.0000,0 a 4.0000,4.0000 0 1,0 -8.0000,0 z" android:strokeColor="@color/glyph_fg" android:strokeWidth="8.0" android:strokeLineCap="butt" android:strokeLineJoin="miter" />
+                <path android:pathData="m56 171 11-25m69 25-10-26" android:strokeColor="@color/glyph_fg" android:strokeWidth="10.0" android:strokeLineCap="round" android:strokeLineJoin="miter" />
+                <path android:pathData="M144 62H48l24 30h48z" android:strokeColor="@color/glyph_fg" android:strokeWidth="10.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M60 164h72M84 44h24" android:strokeColor="@color/glyph_fg" android:strokeWidth="10.0" android:strokeLineCap="round" android:strokeLineJoin="miter" />
+            </group>
+        </vector>
+    </item>
+</layer-list>

@@ -1,0 +1,132 @@
+.class Lcom/google/android/material/search/SearchViewAnimationHelper$3;
+.super Landroid/animation/AnimatorListenerAdapter;
+.source "SearchViewAnimationHelper.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/google/android/material/search/SearchViewAnimationHelper;->startShowAnimationTranslate()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/google/android/material/search/SearchViewAnimationHelper;
+
+.field final synthetic val$animatorSet:Landroid/animation/AnimatorSet;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/android/material/search/SearchViewAnimationHelper;Landroid/animation/AnimatorSet;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010,
+            0x1010
+        }
+        names = {
+            null,
+            null
+        }
+    .end annotation
+
+    .line 310
+    iput-object p1, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$3;->this$0:Lcom/google/android/material/search/SearchViewAnimationHelper;
+
+    iput-object p2, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$3;->val$animatorSet:Landroid/animation/AnimatorSet;
+
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 1
+
+    .line 319
+    iget-object p1, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$3;->this$0:Lcom/google/android/material/search/SearchViewAnimationHelper;
+
+    invoke-static {p1}, Lcom/google/android/material/search/SearchViewAnimationHelper;->access$100(Lcom/google/android/material/search/SearchViewAnimationHelper;)Lcom/google/android/material/search/SearchView;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/google/android/material/search/SearchView;->isAdjustNothingSoftInputMode()Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    .line 320
+    iget-object p1, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$3;->this$0:Lcom/google/android/material/search/SearchViewAnimationHelper;
+
+    invoke-static {p1}, Lcom/google/android/material/search/SearchViewAnimationHelper;->access$100(Lcom/google/android/material/search/SearchViewAnimationHelper;)Lcom/google/android/material/search/SearchView;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/google/android/material/search/SearchView;->requestFocusAndShowKeyboardIfNeeded()V
+
+    .line 322
+    :cond_0
+    iget-object p1, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$3;->this$0:Lcom/google/android/material/search/SearchViewAnimationHelper;
+
+    invoke-static {p1}, Lcom/google/android/material/search/SearchViewAnimationHelper;->access$100(Lcom/google/android/material/search/SearchViewAnimationHelper;)Lcom/google/android/material/search/SearchView;
+
+    move-result-object p1
+
+    sget-object v0, Lcom/google/android/material/search/SearchView$TransitionState;->SHOWN:Lcom/google/android/material/search/SearchView$TransitionState;
+
+    invoke-virtual {p1, v0}, Lcom/google/android/material/search/SearchView;->setTransitionState(Lcom/google/android/material/search/SearchView$TransitionState;)V
+
+    .line 323
+    iget-object p1, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$3;->this$0:Lcom/google/android/material/search/SearchViewAnimationHelper;
+
+    iget-object p1, p1, Lcom/google/android/material/search/SearchViewAnimationHelper;->activeTranslateAnimatorSet:Landroid/animation/AnimatorSet;
+
+    iget-object v0, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$3;->val$animatorSet:Landroid/animation/AnimatorSet;
+
+    if-ne p1, v0, :cond_1
+
+    .line 324
+    iget-object p0, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$3;->this$0:Lcom/google/android/material/search/SearchViewAnimationHelper;
+
+    const/4 p1, 0x0
+
+    iput-object p1, p0, Lcom/google/android/material/search/SearchViewAnimationHelper;->activeTranslateAnimatorSet:Landroid/animation/AnimatorSet;
+
+    :cond_1
+    return-void
+.end method
+
+.method public onAnimationStart(Landroid/animation/Animator;)V
+    .locals 1
+
+    .line 313
+    iget-object p1, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$3;->this$0:Lcom/google/android/material/search/SearchViewAnimationHelper;
+
+    invoke-static {p1}, Lcom/google/android/material/search/SearchViewAnimationHelper;->access$200(Lcom/google/android/material/search/SearchViewAnimationHelper;)Lcom/google/android/material/internal/ClippableRoundedCornerLayout;
+
+    move-result-object p1
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, v0}, Lcom/google/android/material/internal/ClippableRoundedCornerLayout;->setVisibility(I)V
+
+    .line 314
+    iget-object p0, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$3;->this$0:Lcom/google/android/material/search/SearchViewAnimationHelper;
+
+    invoke-static {p0}, Lcom/google/android/material/search/SearchViewAnimationHelper;->access$100(Lcom/google/android/material/search/SearchViewAnimationHelper;)Lcom/google/android/material/search/SearchView;
+
+    move-result-object p0
+
+    sget-object p1, Lcom/google/android/material/search/SearchView$TransitionState;->SHOWING:Lcom/google/android/material/search/SearchView$TransitionState;
+
+    invoke-virtual {p0, p1}, Lcom/google/android/material/search/SearchView;->setTransitionState(Lcom/google/android/material/search/SearchView$TransitionState;)V
+
+    return-void
+.end method

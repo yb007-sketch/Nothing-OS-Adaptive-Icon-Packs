@@ -1,90 +1,135 @@
-<h1 align="center">Nothing Translucent Icons 🪟✨</h1>
+# Nothing OS Adaptive Icon Packs (One UI 9.0 & Android 14+)
 
-<p align="center">
-  <a href="https://github.com/SyedSibtain9/NothingTranslucentIcons/releases/download/v0.5/Nothing.Transucent.Icons.v0.5.apk">
-    <img src="https://img.shields.io/badge/DOWNLOAD_LATEST_APK-00C853?style=for-the-badge&logo=android&logoColor=white" alt="Download Latest APK" />
-    <IMG SRC="https://img.shields.io/github/v/release/SyedSibtain9/NothingTranslucentIcons?style=for-the-badge&label=VERSION&color=2979FF" />
-  </a>
- </p>
-<p align="center">
-<img width="150" alt="Light 1"  src="https://github.com/user-attachments/assets/5adc61bb-b343-4295-b050-eb6c4234b68c" />
-<img width="150" alt="Light 2"  src="https://github.com/user-attachments/assets/1d227539-477e-40bd-9734-b630ecb32b48" />
-</p>
+A suite of premium, minimalist **Nothing OS-style icon packs** engineered specifically for **Samsung One UI 9.0 (Android 17)** via Samsung Good Lock **Theme Park**, as well as all major Android launchers (Nova, Niagara, Lawnchair, Smart Launcher).
 
-<p align="center">
-<img width="150"  alt="Dark 1" src="https://github.com/user-attachments/assets/9beba60d-faa1-413f-8b70-ca06dad47895" />
-<img width="150"  alt="Dark 2" src="https://github.com/user-attachments/assets/de825fb2-6403-4d3c-9862-0b5bd2f08300" />
-</p>
+Built from a library of over **10,640+ themed apps**, this project provides three distinct aesthetic variants:
 
-# 🤯Massive 10,500+ App Coverage (23,600+ Total Mappings)
-* Full Database Integration: Added 10,379 official monochrome brand vector glyphs, taking the pack from 153 to 10,532 unique icons and 23,622 verified ComponentInfo mappings.
-* Near 100% Everyday App Coverage: Themed almost all global and Indian banking apps, UPI/wallets, food delivery, shopping, games, OTT streaming, and utility apps out of the box.
-* Universal OEM System App Support: Added complete system app mappings for Samsung One UI, Xiaomi HyperOS/MIUI, OnePlus OxygenOS, Realme UI, Oppo ColorOS, Vivo/iQOO, Motorola, and Pixel launchers.
+| Variant | Plate Background | Glyph Color | Aesthetic |
+| :--- | :--- | :--- | :--- |
+| **Nothing Pure White** | `#FFFFFF` (100% Solid) | `#111111` (Deep Charcoal Black) | Minimalist ceramic daylight aesthetic |
+| **Nothing Pitch Black** | `#0D0D0D` (Pure AMOLED) | `#FFFFFF` (Crisp Clean White) | True pitch-black dark mode aesthetic |
+| **Nothing Translucent** | Frosted Liquid Glass | Dynamic / Tinted | Iconic translucent Nothing glass plate |
 
-The first live-reactive, frosted translucent icon pack crafted natively for Nothing OS and Nothing Launcher (Nothing Phone (1), Phone (2), Phone (2a), Phone (2a) Plus, Phone (3), Phone (3a), Phone (3a) pro and CMF Phones).
+---
 
-Standard icon packs apply flat, opaque monochrome circles that disconnect from Nothing's signature industrial aesthetic. Nothing Translucent Icons reverse-engineers the exact optical depth, radial diffusion, and live transparency of Nothing OS native widgets (Weather, Clock, Quick Settings, Media Player), bringing true frosted glass aesthetics to every app on your home screen.
+## 📱 Features
 
+- **100% Solid Backgrounds (No Translucent Leaks)**: Zero transparency in Pure White and Pitch Black editions. All 164 core launcher bitmaps (WhatsApp, Instagram, Snapchat, Settings, Google Maps, YouTube, etc.) and all 10,640+ XML vector drawables render with completely solid plates.
+- **Unthemed App Backing (`iconback` & `iconmask`)**: Automatically frames unmapped apps, games, and web shortcuts in matching Nothing-style squircle plates scaled to 68%.
+- **Samsung One UI 9.0 & Good Lock Theme Park Ready**: Fully parsed by Samsung Theme Park without duplicate alias conflicts or missing root activity errors.
+- **Android 14 to Android 17 Support**: Cleanly packaged and cryptographically signed with Android V1, V2, and V3 signatures.
+- **Built-in Scanner Tool**: Includes an integrated dashboard scanner to identify installed packages and export missing `appfilter.xml` component definitions.
+- **100% Match on Standard Devices**: Includes 13 custom-decoded vector icons for regional banking, utilities, and lifestyle apps (Adrenox Connect, HMRC, TSB, JustPark, RingGo, PureGym, Cryptogram, etc.).
 
-✨ Key Features:
------------------
-* 🪟 1:1 Nothing OS Frosted Glass Physics: Replicates the physical translucency and micro-frosted surface of Nothing OS widgets. Icons feel like physical glass lenses resting on your wallpaper.
+---
 
-* ⚡ 120Hz Live Dynamic Scrolling:
-Zero static or baked-in wallpaper clouds. As you swipe across home screen pages, your live wallpaper shines dynamically through each icon plate in real-time.
+## 🎨 Design & Engineering Architecture
 
+### 1. Vector Glyph Geometry & Aesthetics
+Every icon is drafted on a **512×512** canvas centered within Nothing's signature squircle contour:
+- **Stroke Weights**: Standardized between `12.0dp` and `16.0dp` with round line-caps (`round`) and joined corners (`round`) to match the Nothing OS 2.0 / 3.0 visual language.
+- **Color Variables**: Linked dynamically through `@color/glyph_fg`, with `#f2111111` applied in the Pure White edition and `#f5ffffff` in the Pitch Black edition.
 
-* 🌓 True System Theme Reactive:
-Dark Mode: Deep obsidian frosted glass plate  with crisp matte-white glyphs.
-Light Mode: Frosted misty white-glass plate  with dark charcoal glyphs.
-Flips seamlessly when toggling system Dark/Light theme.
+### 2. Eliminating Translucent Artifacts on Core Bitmaps
+The base icon pack contained 164 pre-baked raster PNGs in `res/drawable-nodpi/` with semi-transparent frosted glass baked directly into their alpha channels. 
 
-* 📱 Clean, Obsidian App Drawer:
-When opening the App Drawer, icons gracefully adapt to the dark uniform sheet with zero color cast or visual artifacts.
+To achieve 100% solid opacity without losing fine edge anti-aliasing:
+$$\text{glyph\_diff} = \max(0, \alpha_{\text{day}} - \alpha_{\text{plate}})$$
+$$\text{glyph\_factor} = \text{clamp}\left(\frac{\text{glyph\_diff} - 10}{245 - \alpha_{\text{plate}} - 10}, 0.0, 1.0\right)$$
+$$\text{Color}_{\text{out}} = \text{Color}_{\text{bg}} \times (1.0 - \text{glyph\_factor}) + \text{Color}_{\text{fg}} \times \text{glyph\_factor}$$
 
-* 🎯 100% Pure High-Definition Vectors:
-Centered at 512×512 resolution with mathematical sub-pixel accuracy (dX, dY ≤ 0.5px). Zero blurry low-res crops, zero awkward nested badge rings.
+Using Pillow's C-accelerated `ImageChops` operators, all 164 bitmap icons were processed with sub-pixel fidelity:
+- **Pure White**: Blended over solid `#FFFFFF` (`\alpha = 255`).
+- **Pitch Black**: Blended over solid `#0D0D0D` (`\alpha = 255`).
 
-* 📦 Comprehensive App Support:
-700+ component mappings covering Nothing stock apps, Google Workspace, top global apps, and extensive regional essentials (Jio, PhonePe, Swiggy, Zomato, Blinkit, Kotak811, Bajaj Finance, BGMI, and more).
+### 3. Unthemed App Framing
+To ensure web shortcuts and newly installed apps never display as raw un-themed squares, `appfilter.xml` was enhanced with:
+```xml
+<scale factor="0.68" />
+<iconback img1="iconback" />
+<iconmask img1="iconmask" />
+<iconupon img1="iconupon" />
+```
+- `iconback.png`: Solid squircle backing plate (White or Black).
+- `iconmask.png`: Squircle alpha-cutoff mask.
+- `iconupon.png`: Transparent overlay.
 
-* 🔋 Zero Battery Drain:
-Built as pure native Android vector drawables with hardware-accelerated alpha blending. Runs entirely within the launcher framework with no background services or daemons.
+---
 
-🚀 Getting Started:
---------------------
-1. To Install APK
-2. Head over to the Releases page or Click "Download Latest Apk" on the very top.
-3. Download the latest NothingTranslucentIcons.apk
-4. Open the downloaded file on your Nothing Phone and tap Install.
+## 📥 Downloads
 
-It is Recommended to :
-*  Clear data and cache of the old app
-*  Uninstall old app
-*  Install new app
+Pre-built and signed APKs are available in the [apks/](./apks/) directory and under GitHub Releases:
 
-(As it is an unfinished early build)
+- [Nothing.Pure.White.Icons.v0.6.apk](./apks/Nothing.Pure.White.Icons.v0.6.apk) (`com.sibtain.nothingpurewhiteicons`)
+- [Nothing.Pitch.Black.Icons.v0.6.apk](./apks/Nothing.Pitch.Black.Icons.v0.6.apk) (`com.sibtain.nothingpitchblackicons`)
+- [Nothing.Translucent.Icons.v0.6.apk](./apks/Nothing.Translucent.Icons.v0.6.apk) (`com.sibtain.nothingtranslucenticons`)
 
+---
 
-🎨 How to Apply in Nothing Launcher:
--------------------------------------
-1.Long-press any empty space on your Home Screen.
-2.Tap Customisation (or Edit Home Screen).
-3.Tap App grid & icons / Icon pack.
-4.Choose Nothing Translucent Icons from the list.
-5.Tap Apply and enjoy the live frosted glass look!
+## 🛠️ How to Apply in Samsung Good Lock (Theme Park)
 
-(Compatible with third-party launchers including Nova Launcher, Niagara, Lawnchair, and Smart Launcher).
+1. **Install the APKs**: Install the desired APK variant(s) on your Galaxy device.
+2. **Open Good Lock**:
+   - Launch **Good Lock** and tap **Theme Park**.
+   - Navigate to the **Icon** tab at the bottom.
+3. **Select Icon Pack**:
+   - Tap **Create New** (or select your active theme).
+   - Tap **Iconpack** at the top.
+   - Choose **Nothing Pure White Icons**, **Nothing Pitch Black Icons**, or **Nothing Translucent Icons**.
+4. **Compile & Apply**:
+   - Tap the **Download / Save** button (arrow in top right).
+   - Enter a name (e.g. `Nothing White`) and tap **OK**.
+   - Tap the compiled theme and select **Apply**.
 
+---
 
-🛠️ Requesting Missing Icons:
------------------------------
-* Have an app on your device that isn't themed yet?
-1. Open the app
-2. CLick on "Scan Installed Apps & Copy Appfilter XML"
-3. Open Issues and click New Issue
-4. Paste there what the app copied into your clipboard
+## 🔨 Building from Source
 
-THIS PROJECT IS NOT AFFILIATED OR ENDORSED BY NOTHING!
---------------------------------------------------------
-    Made with ❤️ for Nothing Community
+### Prerequisites
+- Linux / macOS / WSL
+- OpenJDK 21 LTS (`java`)
+- Python 3.10+ with `Pillow` (`python3 -m pip install pillow`)
+- [Apktool](https://apktool.org/) v3.0.3+
+- [uber-apk-signer](https://github.com/patrickfav/uber-apk-signer) v1.3.0+
+
+### Build Pipeline
+Run the all-in-one build and signing automation script:
+```bash
+python3 scripts/build_all_solid_packs.py
+```
+The script will:
+1. Reconstruct vector drawables and inject custom app mappings.
+2. Perform mathematical glyph extraction and plate replacement across all raster PNGs.
+3. Generate updated `iconback`, `iconmask`, and adaptive launcher mipmaps.
+4. Compile the APKs using `apktool b`.
+5. Zipalign and sign with Android V1/V2/V3 signatures.
+
+---
+
+## 📂 Repository Layout
+
+```
+├── apks/                              # Ready-to-install signed APKs
+│   ├── Nothing.Pure.White.Icons.v0.6.apk
+│   ├── Nothing.Pitch.Black.Icons.v0.6.apk
+│   └── Nothing.Translucent.Icons.v0.6.apk
+├── scripts/                           # Build & generation pipeline
+│   ├── build_all_solid_packs.py       # Full compilation and theming engine
+│   ├── generate_13_vectors.py         # Custom vector glyph definitions
+│   └── export_pngs.py                 # High-resolution PNG exporter
+├── src/                               # Decompiled Android source tree
+│   ├── AndroidManifest.xml
+│   ├── apktool.yml
+│   ├── assets/                        # appfilter.xml and drawable.xml
+│   ├── res/                           # 10,640+ XML drawables & raster plates
+│   └── smali/                         # Dashboard & scanner engine
+└── README.md
+```
+
+---
+
+## 🤝 Credits & Acknowledgements
+
+- **Syed Sibtain** (`SyedSibtain9`): Creator of the original *Nothing Translucent Icons* aesthetic.
+- **Yashwanth Bellum** (`yb007-sketch`): One UI 9.0 compatibility architecture, Pure White & Pitch Black mathematical extraction pipeline, Theme Park optimization, and missing app definitions.
+- **Android Open Source Project & Nothing Technology Limited**: Inspiration for Nothing OS glyph design guidelines.

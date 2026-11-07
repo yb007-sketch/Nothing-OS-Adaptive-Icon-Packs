@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_liquid_glass_plate_0" />
+    <item>
+        <vector android:height="512.0dp" android:width="512.0dp" android:viewportWidth="512.0" android:viewportHeight="512.0">
+            <group android:scaleX="1.270833" android:scaleY="1.270833" android:translateX="134.0" android:translateY="134.0">
+                <path android:pathData="M 68.0000,96.0000 a 28.0000,28.0000 0 1,0 56.0000,0 a 28.0000,28.0000 0 1,0 -56.0000,0 z" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M143.776 42.266h-22.574a5.96 5.96 0 0 1-4.213-1.746l-16.776-16.775a5.96 5.96 0 0 0-8.426 0L75.01 40.52a5.96 5.96 0 0 1-4.213 1.746H48.224a5.96 5.96 0 0 0-5.958 5.958v22.574c0 1.58-.628 3.096-1.746 4.213L23.745 91.787a5.96 5.96 0 0 0 0 8.426l16.775 16.776a5.96 5.96 0 0 1 1.746 4.213v22.574a5.96 5.96 0 0 0 5.958 5.958h22.574c1.58 0 3.096.628 4.213 1.746l16.776 16.775a5.96 5.96 0 0 0 8.426 0l16.776-16.775a5.96 5.96 0 0 1 4.213-1.746h22.574a5.957 5.957 0 0 0 5.958-5.958v-22.574c0-1.58.628-3.096 1.746-4.213l16.775-16.776a5.96 5.96 0 0 0 0-8.426L151.48 75.01a5.96 5.96 0 0 1-1.746-4.213V48.224a5.96 5.96 0 0 0-5.958-5.958" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+            </group>
+        </vector>
+    </item>
+</layer-list>

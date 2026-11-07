@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_liquid_glass_plate_3" />
+    <item>
+        <vector android:height="512.0dp" android:width="512.0dp" android:viewportWidth="512.0" android:viewportHeight="512.0">
+            <group android:scaleX="1.270833" android:scaleY="1.270833" android:translateX="134.0" android:translateY="134.0">
+                <path android:pathData="M 142.0000,50.0000 H 164.0000 A 6.0000,6.0000 0 0 1 170.0000,56.0000 V 78.0000 A 6.0000,6.0000 0 0 1 164.0000,84.0000 H 142.0000 A 6.0000,6.0000 0 0 1 136.0000,78.0000 V 56.0000 A 6.0000,6.0000 0 0 1 142.0000,50.0000 Z" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M79 67v58m34-58v58" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M 28.0000,108.0000 H 50.0000 A 6.0000,6.0000 0 0 1 56.0000,114.0000 V 136.0000 A 6.0000,6.0000 0 0 1 50.0000,142.0000 H 28.0000 A 6.0000,6.0000 0 0 1 22.0000,136.0000 V 114.0000 A 6.0000,6.0000 0 0 1 28.0000,108.0000 Z" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M 22.0000,67.0000 a 17.0000,17.0000 0 1,0 34.0000,0 a 17.0000,17.0000 0 1,0 -34.0000,0 z" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M 136.0000,125.0000 a 17.0000,17.0000 0 1,0 34.0000,0 a 17.0000,17.0000 0 1,0 -34.0000,0 z" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M113 125a17 17 0 1 1-34 0m0-58a17 17 0 1 1 34 0" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+            </group>
+        </vector>
+    </item>
+</layer-list>

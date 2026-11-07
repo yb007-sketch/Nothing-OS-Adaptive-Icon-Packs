@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_liquid_glass_plate_2" />
+    <item>
+        <vector android:height="512.0dp" android:width="512.0dp" android:viewportWidth="512.0" android:viewportHeight="512.0">
+            <group android:scaleX="1.270833" android:scaleY="1.270833" android:translateX="134.0" android:translateY="134.0">
+                <path android:pathData="M96 170S27 160 27 50l69-28m0 148s69-10 69-120L96 22" android:strokeColor="@color/glyph_fg" android:strokeWidth="12.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M 71.0000,59.0000 H 81.0000 A 6.0000,6.0000 0 0 1 87.0000,65.0000 V 75.0000 A 6.0000,6.0000 0 0 1 81.0000,81.0000 H 71.0000 A 6.0000,6.0000 0 0 1 65.0000,75.0000 V 65.0000 A 6.0000,6.0000 0 0 1 71.0000,59.0000 Z" android:strokeColor="@color/glyph_fg" android:strokeWidth="10.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M 111.0000,59.0000 H 121.0000 A 6.0000,6.0000 0 0 1 127.0000,65.0000 V 75.0000 A 6.0000,6.0000 0 0 1 121.0000,81.0000 H 111.0000 A 6.0000,6.0000 0 0 1 105.0000,75.0000 V 65.0000 A 6.0000,6.0000 0 0 1 111.0000,59.0000 Z" android:strokeColor="@color/glyph_fg" android:strokeWidth="10.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M 71.0000,99.0000 H 81.0000 A 6.0000,6.0000 0 0 1 87.0000,105.0000 V 115.0000 A 6.0000,6.0000 0 0 1 81.0000,121.0000 H 71.0000 A 6.0000,6.0000 0 0 1 65.0000,115.0000 V 105.0000 A 6.0000,6.0000 0 0 1 71.0000,99.0000 Z" android:strokeColor="@color/glyph_fg" android:strokeWidth="10.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M105 122h4m12 0h6m-22-24h22m-22 12h11" android:strokeColor="@color/glyph_fg" android:strokeWidth="8.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+            </group>
+        </vector>
+    </item>
+</layer-list>

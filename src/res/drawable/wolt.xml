@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_liquid_glass_plate_3" />
+    <item>
+        <vector android:height="512.0dp" android:width="512.0dp" android:viewportWidth="512.0" android:viewportHeight="512.0">
+            <group android:scaleX="1.270833" android:scaleY="1.270833" android:translateX="134.0" android:translateY="134.0">
+                <path android:pathData="M24.944 73.998c-2.336 9.829-7.008 32.985-1.001 42.98 6.266 10.428 18.855-21.99 25.028-39.982-1.168 10.662-2.601 33.385 7.01 40.982C65.59 125.575 72.164 88.491 74 69" android:strokeColor="@color/glyph_fg" android:strokeWidth="10.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M24.944 73.998c-2.336 9.829-7.008 32.985-1.001 42.98 6.266 10.428 18.855-21.99 25.028-39.982-1.168 10.662-2.601 33.385 7.01 40.982C65.59 125.575 72.164 88.491 74 69m13 37c0-14 9.667-23.333 15-23.5 6 0 11.6 5.1 10 19.5s-11 17-17 16c-3.946-.658-8-4-8-12" android:strokeColor="@color/glyph_fg" android:strokeWidth="10.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M87 106c0-14 9.667-23.333 15-23.5 6 0 11.6 5.1 10 19.5s-11 17-17 16c-3.946-.658-8-4-8-12" android:strokeColor="@color/glyph_fg" android:strokeWidth="10.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M108 85c-1.167 4.333.8 12.9 10 12.5s17.5-19.167 20.5-28.5c0 0-15.1 41.2-3.5 48s23-27 27-42.5c0 0-19.5 60 9 38.5" android:strokeColor="@color/glyph_fg" android:strokeWidth="10.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+                <path android:pathData="M108 85c-1.167 4.333.8 12.9 10 12.5s17.5-19.167 20.5-28.5c0 0-15.1 41.2-3.5 48s23-27 27-42.5c0 0-19.5 60 9 38.5m-19-27h19m-19 0h19" android:strokeColor="@color/glyph_fg" android:strokeWidth="10.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+            </group>
+        </vector>
+    </item>
+</layer-list>
